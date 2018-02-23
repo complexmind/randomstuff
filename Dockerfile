@@ -1,2 +1,2 @@
 FROM registry.access.redhat.com/rhel7/rhel-tools
-RUN sleep 500000
+RUN nohup read -p BLAH & \&& disown %1
